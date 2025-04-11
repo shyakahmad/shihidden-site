@@ -249,7 +249,7 @@ background for readability */
 }
 
 .instagram-link img {
-  width: 2px;  /* adjust as needed */
+  width: 1px;  /* adjust as needed */
   height: auto;
   background: transparent; /* ensures the background is transparent */
 }
