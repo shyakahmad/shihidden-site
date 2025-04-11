@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - shihidden</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Import Open Sans for non-heading texts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <!-- Back to Home -->
+    <div class="menu-icon">
+      <a href="index.html">&#9776;</a>
+    </div>
+    <div class="profile">
+      <a href="login.html">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- Auth Container: Initially shows only the Sign Up Form -->
+  <div class="auth-container">
+    <!-- Sign Up Section -->
+    <div class="sign-up-section">
+      <h2 class="signup-heading">Sign Up</h2>
+      <form id="signup-form">
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+        <input type="password" id="signup-password" placeholder="Enter your password" required>
+        
+        <!-- Hidden confirmation code input (will appear after user clicks Sign Up) -->
+        <div id="confirmation-section" style="display: none;">
+          <p class="info-text">A confirmation code has been sent to your email. Enter it below:</p>
+          <input type="text" id="confirmation-code" placeholder="Enter confirmation code">
+          <button type="button" id="confirm-button">Confirm Code</button>
+        </div>
+
+        <button type="submit" id="signup-button">Sign Up</button>
+      </form>
+      <div id="signup-message"></div>
+    </div>
+  </div>
+
+  <!-- Welcome Container (hidden by default) -->
+  <div id="welcome-container" style="display: none;">
+      <h2 class="welcome-text">Welcome The World Is Yours</h2>
+      <button class="back-btn" onclick="window.location.href='hidden.html'">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
