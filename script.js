@@ -46,7 +46,7 @@ if (titleDiv) {
 ******************************************/
 // Example array of image paths. Replace with your own.
 const allImages = [
-  'archive1.WebP',
+  'images/archive1.WebP',
   'images/archive2.jpg',
   'images/archive3.jpg',
   'images/archive4.jpg',
